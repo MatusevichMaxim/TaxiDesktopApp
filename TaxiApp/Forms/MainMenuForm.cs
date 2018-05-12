@@ -35,5 +35,10 @@ namespace TaxiApp
             tabPointer.Top = ReportsTab.Top;
             reportsControl.BringToFront();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

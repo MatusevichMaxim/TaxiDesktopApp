@@ -31,19 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.tabPointer = new System.Windows.Forms.Panel();
-            this.topUIPanel = new System.Windows.Forms.Panel();
-            this.logoPanel = new System.Windows.Forms.Panel();
-            this.logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.FeedbackTab = new System.Windows.Forms.Button();
             this.DiscountsTab = new System.Windows.Forms.Button();
             this.ReviewsTab = new System.Windows.Forms.Button();
             this.DriversTab = new System.Windows.Forms.Button();
             this.ReportsTab = new System.Windows.Forms.Button();
             this.HomeTab = new System.Windows.Forms.Button();
-            this.homeControl = new TaxiApp.Forms.HomeControl();
+            this.topUIPanel = new System.Windows.Forms.Panel();
+            this.logoPanel = new System.Windows.Forms.Panel();
+            this.logo = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.exitBtn = new System.Windows.Forms.PictureBox();
             this.reportsControl = new TaxiApp.Controlls.ReportsControl();
+            this.homeControl = new TaxiApp.Forms.HomeControl();
+            this.settingsBtn = new System.Windows.Forms.PictureBox();
             this.menuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -69,35 +73,6 @@
             this.tabPointer.Name = "tabPointer";
             this.tabPointer.Size = new System.Drawing.Size(5, 54);
             this.tabPointer.TabIndex = 6;
-            // 
-            // topUIPanel
-            // 
-            this.topUIPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.topUIPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topUIPanel.Location = new System.Drawing.Point(176, 0);
-            this.topUIPanel.Name = "topUIPanel";
-            this.topUIPanel.Size = new System.Drawing.Size(702, 5);
-            this.topUIPanel.TabIndex = 1;
-            // 
-            // logoPanel
-            // 
-            this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.logoPanel.Controls.Add(this.logo);
-            this.logoPanel.Location = new System.Drawing.Point(210, 5);
-            this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(104, 104);
-            this.logoPanel.TabIndex = 2;
-            // 
-            // logo
-            // 
-            this.logo.AutoSize = true;
-            this.logo.Font = new System.Drawing.Font("Harlow Solid Italic", 42F, System.Drawing.FontStyle.Italic);
-            this.logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.logo.Location = new System.Drawing.Point(-7, 13);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(114, 71);
-            this.logo.TabIndex = 0;
-            this.logo.Text = "TL";
             // 
             // FeedbackTab
             // 
@@ -197,12 +172,45 @@
             this.HomeTab.UseVisualStyleBackColor = true;
             this.HomeTab.Click += new System.EventHandler(this.HomeTab_Click);
             // 
-            // homeControl
+            // topUIPanel
             // 
-            this.homeControl.Location = new System.Drawing.Point(176, 110);
-            this.homeControl.Name = "homeControl";
-            this.homeControl.Size = new System.Drawing.Size(702, 384);
-            this.homeControl.TabIndex = 3;
+            this.topUIPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.topUIPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topUIPanel.Location = new System.Drawing.Point(176, 0);
+            this.topUIPanel.Name = "topUIPanel";
+            this.topUIPanel.Size = new System.Drawing.Size(702, 5);
+            this.topUIPanel.TabIndex = 1;
+            // 
+            // logoPanel
+            // 
+            this.logoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.logoPanel.Controls.Add(this.logo);
+            this.logoPanel.Location = new System.Drawing.Point(210, 5);
+            this.logoPanel.Name = "logoPanel";
+            this.logoPanel.Size = new System.Drawing.Size(104, 104);
+            this.logoPanel.TabIndex = 2;
+            // 
+            // logo
+            // 
+            this.logo.AutoSize = true;
+            this.logo.Font = new System.Drawing.Font("Harlow Solid Italic", 42F, System.Drawing.FontStyle.Italic);
+            this.logo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
+            this.logo.Location = new System.Drawing.Point(-7, 13);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(114, 71);
+            this.logo.TabIndex = 0;
+            this.logo.Text = "TL";
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.Image = global::TaxiApp.Properties.Resources.icons8_shutdown_60;
+            this.exitBtn.Location = new System.Drawing.Point(836, 18);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(25, 25);
+            this.exitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitBtn.TabIndex = 9;
+            this.exitBtn.TabStop = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // reportsControl
             // 
@@ -211,14 +219,33 @@
             this.reportsControl.Size = new System.Drawing.Size(702, 384);
             this.reportsControl.TabIndex = 4;
             // 
+            // homeControl
+            // 
+            this.homeControl.Location = new System.Drawing.Point(176, 110);
+            this.homeControl.Name = "homeControl";
+            this.homeControl.Size = new System.Drawing.Size(702, 384);
+            this.homeControl.TabIndex = 3;
+            // 
+            // settingsBtn
+            // 
+            this.settingsBtn.Image = global::TaxiApp.Properties.Resources.ic_settings_64;
+            this.settingsBtn.Location = new System.Drawing.Point(799, 18);
+            this.settingsBtn.Name = "settingsBtn";
+            this.settingsBtn.Size = new System.Drawing.Size(25, 25);
+            this.settingsBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsBtn.TabIndex = 10;
+            this.settingsBtn.TabStop = false;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
             this.ClientSize = new System.Drawing.Size(878, 494);
-            this.Controls.Add(this.reportsControl);
+            this.Controls.Add(this.settingsBtn);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.homeControl);
+            this.Controls.Add(this.reportsControl);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.topUIPanel);
             this.Controls.Add(this.menuPanel);
@@ -228,6 +255,8 @@
             this.menuPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +276,7 @@
         private System.Windows.Forms.Panel tabPointer;
         private Forms.HomeControl homeControl;
         private Controlls.ReportsControl reportsControl;
+        private System.Windows.Forms.PictureBox exitBtn;
+        private System.Windows.Forms.PictureBox settingsBtn;
     }
 }

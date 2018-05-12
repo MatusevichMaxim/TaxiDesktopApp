@@ -147,12 +147,6 @@
     <None Include="Resources\edit.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\envelope.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\folder.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\garbage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -163,9 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\headphones.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\heart.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\house.png" />
@@ -186,34 +177,19 @@
     <None Include="Resources\monitor.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\musical-note.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\next.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\next-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\padlock.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\paper-plane.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\phone-call.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\photo-camera.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pie-chart.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\piggy-bank.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\placeholder.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printer.png" />
@@ -228,22 +204,10 @@
     <None Include="Resources\settings-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\share.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\shopping-bag.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shopping-cart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\shuffle.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\speaker.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\star.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tag.png" />
@@ -292,6 +256,198 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_megafone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arroba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\battery-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cogwheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-battery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femenine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\franc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hierarchical-structure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infinity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masculine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musical-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musical-note-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percentage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pound-sterling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telephone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_settings-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-60.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

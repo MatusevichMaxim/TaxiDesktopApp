@@ -1,0 +1,15 @@
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\bin\Debug\TaxiApp.exe.config
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\bin\Debug\TaxiApp.exe
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\bin\Debug\TaxiApp.pdb
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Form1.resources
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Properties.Resources.resources
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.csproj.GenerateResource.cache
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.exe
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.pdb
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.csproj.CopyComplete
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.MainMenuForm.resources
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Forms.HomeControl.resources
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Controlls.ReportsControl.resources
+C:\Users\Maxim\Desktop\Projects\TaxiApp\TaxiApp\obj\Debug\TaxiApp.csprojResolveAssemblyReference.cache

@@ -35,6 +35,7 @@
             this.TitleLoginScreen = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnSignUp = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.signupPanel = new System.Windows.Forms.Panel();
+            this.signupLoginButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.signUpButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.termsCheckbox = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -42,7 +43,6 @@
             this.signupUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.signupSurname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.signupName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.signupLoginButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -165,6 +165,43 @@
             this.signupPanel.Name = "signupPanel";
             this.signupPanel.Size = new System.Drawing.Size(416, 308);
             this.signupPanel.TabIndex = 9;
+            // 
+            // signupLoginButton
+            // 
+            this.signupLoginButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(13)))), ((int)(((byte)(40)))));
+            this.signupLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
+            this.signupLoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.signupLoginButton.BorderRadius = 7;
+            this.signupLoginButton.ButtonText = "Login";
+            this.signupLoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signupLoginButton.DisabledColor = System.Drawing.Color.Gray;
+            this.signupLoginButton.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.signupLoginButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.signupLoginButton.Iconimage = null;
+            this.signupLoginButton.Iconimage_right = null;
+            this.signupLoginButton.Iconimage_right_Selected = null;
+            this.signupLoginButton.Iconimage_Selected = null;
+            this.signupLoginButton.IconMarginLeft = 0;
+            this.signupLoginButton.IconMarginRight = 0;
+            this.signupLoginButton.IconRightVisible = true;
+            this.signupLoginButton.IconRightZoom = 0D;
+            this.signupLoginButton.IconVisible = true;
+            this.signupLoginButton.IconZoom = 90D;
+            this.signupLoginButton.IsTab = false;
+            this.signupLoginButton.Location = new System.Drawing.Point(221, 259);
+            this.signupLoginButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.signupLoginButton.Name = "signupLoginButton";
+            this.signupLoginButton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
+            this.signupLoginButton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
+            this.signupLoginButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.signupLoginButton.selected = false;
+            this.signupLoginButton.Size = new System.Drawing.Size(153, 49);
+            this.signupLoginButton.TabIndex = 12;
+            this.signupLoginButton.Text = "Login";
+            this.signupLoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signupLoginButton.Textcolor = System.Drawing.Color.White;
+            this.signupLoginButton.TextFont = new System.Drawing.Font("Futura Md BT", 14F);
+            this.signupLoginButton.Click += new System.EventHandler(this.signupLoginButton_Click);
             // 
             // bunifuCustomLabel1
             // 
@@ -301,43 +338,6 @@
             this.signupName.Size = new System.Drawing.Size(153, 27);
             this.signupName.TabIndex = 0;
             this.signupName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // signupLoginButton
-            // 
-            this.signupLoginButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(13)))), ((int)(((byte)(40)))));
-            this.signupLoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
-            this.signupLoginButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.signupLoginButton.BorderRadius = 7;
-            this.signupLoginButton.ButtonText = "Login";
-            this.signupLoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signupLoginButton.DisabledColor = System.Drawing.Color.Gray;
-            this.signupLoginButton.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.signupLoginButton.Iconcolor = System.Drawing.Color.Transparent;
-            this.signupLoginButton.Iconimage = null;
-            this.signupLoginButton.Iconimage_right = null;
-            this.signupLoginButton.Iconimage_right_Selected = null;
-            this.signupLoginButton.Iconimage_Selected = null;
-            this.signupLoginButton.IconMarginLeft = 0;
-            this.signupLoginButton.IconMarginRight = 0;
-            this.signupLoginButton.IconRightVisible = true;
-            this.signupLoginButton.IconRightZoom = 0D;
-            this.signupLoginButton.IconVisible = true;
-            this.signupLoginButton.IconZoom = 90D;
-            this.signupLoginButton.IsTab = false;
-            this.signupLoginButton.Location = new System.Drawing.Point(221, 259);
-            this.signupLoginButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.signupLoginButton.Name = "signupLoginButton";
-            this.signupLoginButton.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
-            this.signupLoginButton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(24)))), ((int)(((byte)(57)))));
-            this.signupLoginButton.OnHoverTextColor = System.Drawing.Color.White;
-            this.signupLoginButton.selected = false;
-            this.signupLoginButton.Size = new System.Drawing.Size(153, 49);
-            this.signupLoginButton.TabIndex = 12;
-            this.signupLoginButton.Text = "Login";
-            this.signupLoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.signupLoginButton.Textcolor = System.Drawing.Color.White;
-            this.signupLoginButton.TextFont = new System.Drawing.Font("Futura Md BT", 14F);
-            this.signupLoginButton.Click += new System.EventHandler(this.signupLoginButton_Click);
             // 
             // pictureBox3
             // 

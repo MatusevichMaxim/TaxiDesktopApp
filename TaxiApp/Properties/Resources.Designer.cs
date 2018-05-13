@@ -333,6 +333,16 @@ namespace TaxiApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_call {
+            get {
+                object obj = ResourceManager.GetObject("ic_call", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_car {
             get {
                 object obj = ResourceManager.GetObject("ic_car", resourceCulture);
@@ -426,6 +436,26 @@ namespace TaxiApp.Properties {
         internal static System.Drawing.Bitmap ic_settings_64 {
             get {
                 object obj = ResourceManager.GetObject("ic_settings_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_map_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_map_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_restart_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_restart_filled_50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

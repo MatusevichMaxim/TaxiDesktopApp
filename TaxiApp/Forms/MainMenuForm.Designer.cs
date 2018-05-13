@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.tabPointer = new System.Windows.Forms.Panel();
@@ -41,13 +42,15 @@
             this.logoPanel = new System.Windows.Forms.Panel();
             this.logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.exitBtn = new System.Windows.Forms.PictureBox();
-            this.reportsControl = new TaxiApp.Controlls.ReportsControl();
-            this.homeControl = new TaxiApp.Forms.HomeControl();
             this.settingsBtn = new System.Windows.Forms.PictureBox();
+            this.accountStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.homeControl = new TaxiApp.Forms.HomeControl();
+            this.reportsControl = new TaxiApp.Controlls.ReportsControl();
             this.menuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountStatusBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -63,7 +66,7 @@
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanel.Location = new System.Drawing.Point(0, 0);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(176, 494);
+            this.menuPanel.Size = new System.Drawing.Size(176, 514);
             this.menuPanel.TabIndex = 0;
             // 
             // tabPointer
@@ -137,6 +140,7 @@
             this.DriversTab.Text = "Drivers";
             this.DriversTab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DriversTab.UseVisualStyleBackColor = true;
+            this.DriversTab.Click += new System.EventHandler(this.DriversTab_Click);
             // 
             // ReportsTab
             // 
@@ -178,7 +182,7 @@
             this.topUIPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topUIPanel.Location = new System.Drawing.Point(176, 0);
             this.topUIPanel.Name = "topUIPanel";
-            this.topUIPanel.Size = new System.Drawing.Size(702, 5);
+            this.topUIPanel.Size = new System.Drawing.Size(722, 5);
             this.topUIPanel.TabIndex = 1;
             // 
             // logoPanel
@@ -212,20 +216,6 @@
             this.exitBtn.TabStop = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // reportsControl
-            // 
-            this.reportsControl.Location = new System.Drawing.Point(176, 110);
-            this.reportsControl.Name = "reportsControl";
-            this.reportsControl.Size = new System.Drawing.Size(702, 384);
-            this.reportsControl.TabIndex = 4;
-            // 
-            // homeControl
-            // 
-            this.homeControl.Location = new System.Drawing.Point(176, 110);
-            this.homeControl.Name = "homeControl";
-            this.homeControl.Size = new System.Drawing.Size(702, 384);
-            this.homeControl.TabIndex = 3;
-            // 
             // settingsBtn
             // 
             this.settingsBtn.Image = global::TaxiApp.Properties.Resources.ic_settings_64;
@@ -236,12 +226,30 @@
             this.settingsBtn.TabIndex = 10;
             this.settingsBtn.TabStop = false;
             // 
+            // accountStatusBindingSource
+            // 
+            this.accountStatusBindingSource.DataMember = "AccountStatus";
+            // 
+            // homeControl
+            // 
+            this.homeControl.Location = new System.Drawing.Point(176, 110);
+            this.homeControl.Name = "homeControl";
+            this.homeControl.Size = new System.Drawing.Size(702, 384);
+            this.homeControl.TabIndex = 3;
+            // 
+            // reportsControl
+            // 
+            this.reportsControl.Location = new System.Drawing.Point(176, 110);
+            this.reportsControl.Name = "reportsControl";
+            this.reportsControl.Size = new System.Drawing.Size(702, 384);
+            this.reportsControl.TabIndex = 4;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(239)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(878, 494);
+            this.ClientSize = new System.Drawing.Size(898, 514);
             this.Controls.Add(this.settingsBtn);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.homeControl);
@@ -252,11 +260,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenuForm";
             this.Text = "MainMenuForm";
+            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.menuPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accountStatusBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +288,6 @@
         private Controlls.ReportsControl reportsControl;
         private System.Windows.Forms.PictureBox exitBtn;
         private System.Windows.Forms.PictureBox settingsBtn;
+        private System.Windows.Forms.BindingSource accountStatusBindingSource;
     }
 }

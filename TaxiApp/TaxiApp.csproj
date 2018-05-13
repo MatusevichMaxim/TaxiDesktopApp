@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlls\DriversControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controlls\DriversControl.Designer.cs">
+      <DependentUpon>DriversControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\ReportsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -73,8 +79,20 @@
       <DependentUpon>MainMenuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\AccountStatus.cs" />
+    <Compile Include="Models\DiscountModel.cs" />
+    <Compile Include="Models\OrderModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaxiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controlls\DriversControl.resx">
+      <DependentUpon>DriversControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controlls\HomeControl.resx">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +124,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TaxiDataSet.xsc">
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TaxiDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TaxiDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TaxiDataSet.xss">
+      <DependentUpon>TaxiDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -448,6 +477,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-shutdown-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-restart-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-map-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

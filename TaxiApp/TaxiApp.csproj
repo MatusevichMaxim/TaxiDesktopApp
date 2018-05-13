@@ -48,17 +48,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlls\DiscountControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controlls\DiscountControl.Designer.cs">
+      <DependentUpon>DiscountControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\DriversControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controlls\DriversControl.Designer.cs">
       <DependentUpon>DriversControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controlls\FeedbackControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controlls\FeedbackControl.Designer.cs">
+      <DependentUpon>FeedbackControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controlls\ReportsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controlls\ReportsControl.Designer.cs">
       <DependentUpon>ReportsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controlls\ReviewsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controlls\ReviewsControl.Designer.cs">
+      <DependentUpon>ReviewsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
@@ -90,14 +108,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TaxiDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controlls\DiscountControl.resx">
+      <DependentUpon>DiscountControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controlls\DriversControl.resx">
       <DependentUpon>DriversControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\FeedbackControl.resx">
+      <DependentUpon>FeedbackControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controlls\HomeControl.resx">
       <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controlls\ReportsControl.resx">
       <DependentUpon>ReportsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlls\ReviewsControl.resx">
+      <DependentUpon>ReviewsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -115,6 +142,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -489,6 +517,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-map-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-52.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

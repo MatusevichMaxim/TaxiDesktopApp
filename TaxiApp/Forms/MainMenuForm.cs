@@ -58,7 +58,28 @@ namespace TaxiApp
         {
             tabPointer.Height = DriversTab.Height;
             tabPointer.Top = DriversTab.Top;
-            reportsControl.BringToFront();
+            driverControl.BringToFront();
+        }
+
+        private void ReviewsTab_Click(object sender, EventArgs e)
+        {
+            tabPointer.Height = ReviewsTab.Height;
+            tabPointer.Top = ReviewsTab.Top;
+            reviewsControl.BringToFront();
+        }
+
+        private void DiscountsTab_Click(object sender, EventArgs e)
+        {
+            tabPointer.Height = DiscountsTab.Height;
+            tabPointer.Top = DiscountsTab.Top;
+            discountControl.BringToFront();
+        }
+
+        private void FeedbackTab_Click(object sender, EventArgs e)
+        {
+            tabPointer.Height = FeedbackTab.Height;
+            tabPointer.Top = FeedbackTab.Top;
+            feedbackControl.BringToFront();
         }
     }
 }

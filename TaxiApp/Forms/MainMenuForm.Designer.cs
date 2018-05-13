@@ -46,6 +46,10 @@
             this.accountStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.homeControl = new TaxiApp.Forms.HomeControl();
             this.reportsControl = new TaxiApp.Controlls.ReportsControl();
+            this.driverControl = new TaxiApp.Controlls.DriversControl();
+            this.reviewsControl = new TaxiApp.Controlls.ReviewsControl();
+            this.discountControl = new TaxiApp.Controlls.DiscountControl();
+            this.feedbackControl = new TaxiApp.Controlls.FeedbackControl();
             this.menuPanel.SuspendLayout();
             this.logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
@@ -92,6 +96,7 @@
             this.FeedbackTab.Text = "Feedback";
             this.FeedbackTab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.FeedbackTab.UseVisualStyleBackColor = true;
+            this.FeedbackTab.Click += new System.EventHandler(this.FeedbackTab_Click);
             // 
             // DiscountsTab
             // 
@@ -108,6 +113,7 @@
             this.DiscountsTab.Text = "Discounts";
             this.DiscountsTab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DiscountsTab.UseVisualStyleBackColor = true;
+            this.DiscountsTab.Click += new System.EventHandler(this.DiscountsTab_Click);
             // 
             // ReviewsTab
             // 
@@ -124,6 +130,7 @@
             this.ReviewsTab.Text = "Reviews";
             this.ReviewsTab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReviewsTab.UseVisualStyleBackColor = true;
+            this.ReviewsTab.Click += new System.EventHandler(this.ReviewsTab_Click);
             // 
             // DriversTab
             // 
@@ -244,6 +251,34 @@
             this.reportsControl.Size = new System.Drawing.Size(702, 384);
             this.reportsControl.TabIndex = 4;
             // 
+            // driverControl
+            // 
+            this.driverControl.Location = new System.Drawing.Point(176, 110);
+            this.driverControl.Name = "driverControl";
+            this.driverControl.Size = new System.Drawing.Size(702, 384);
+            this.driverControl.TabIndex = 11;
+            // 
+            // reviewsControl
+            // 
+            this.reviewsControl.Location = new System.Drawing.Point(176, 110);
+            this.reviewsControl.Name = "reviewsControl";
+            this.reviewsControl.Size = new System.Drawing.Size(702, 384);
+            this.reviewsControl.TabIndex = 12;
+            // 
+            // discountControl
+            // 
+            this.discountControl.Location = new System.Drawing.Point(176, 110);
+            this.discountControl.Name = "discountControl";
+            this.discountControl.Size = new System.Drawing.Size(702, 384);
+            this.discountControl.TabIndex = 13;
+            // 
+            // feedbackControl
+            // 
+            this.feedbackControl.Location = new System.Drawing.Point(176, 110);
+            this.feedbackControl.Name = "feedbackControl";
+            this.feedbackControl.Size = new System.Drawing.Size(702, 384);
+            this.feedbackControl.TabIndex = 14;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +289,10 @@
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.homeControl);
             this.Controls.Add(this.reportsControl);
+            this.Controls.Add(this.driverControl);
+            this.Controls.Add(this.reviewsControl);
+            this.Controls.Add(this.discountControl);
+            this.Controls.Add(this.feedbackControl);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.topUIPanel);
             this.Controls.Add(this.menuPanel);
@@ -289,5 +328,9 @@
         private System.Windows.Forms.PictureBox exitBtn;
         private System.Windows.Forms.PictureBox settingsBtn;
         private System.Windows.Forms.BindingSource accountStatusBindingSource;
+        private Controlls.DriversControl driverControl;
+        private Controlls.ReviewsControl reviewsControl;
+        private Controlls.DiscountControl discountControl;
+        private Controlls.FeedbackControl feedbackControl;
     }
 }

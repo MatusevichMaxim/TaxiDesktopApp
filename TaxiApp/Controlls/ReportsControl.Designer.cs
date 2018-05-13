@@ -32,11 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tripReportDG = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.reportIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.driverDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.completedOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tripReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.taxiDataSet = new TaxiApp.TaxiDataSet();
             this.tripReportTableAdapter = new TaxiApp.TaxiDataSetTableAdapters.TripReportTableAdapter();
@@ -46,12 +41,19 @@
             this.clientsReviewTableAdapter = new TaxiApp.TaxiDataSetTableAdapters.ClientsReviewTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tripReportBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.reportIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driverDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.completedOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tripReportDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tripReportBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.taxiDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsReviewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tripReportBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // tripReportDG
@@ -77,7 +79,7 @@
             this.completedOrderDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
             this.commentDataGridViewTextBoxColumn});
-            this.tripReportDG.DataSource = this.tripReportBindingSource;
+            this.tripReportDG.DataSource = this.tripReportBindingSource1;
             this.tripReportDG.DoubleBuffered = true;
             this.tripReportDG.EnableHeadersVisualStyles = false;
             this.tripReportDG.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
@@ -87,44 +89,8 @@
             this.tripReportDG.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.tripReportDG.RowTemplate.Height = 40;
             this.tripReportDG.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tripReportDG.Size = new System.Drawing.Size(401, 293);
+            this.tripReportDG.Size = new System.Drawing.Size(526, 293);
             this.tripReportDG.TabIndex = 0;
-            // 
-            // reportIdDataGridViewTextBoxColumn
-            // 
-            this.reportIdDataGridViewTextBoxColumn.DataPropertyName = "ReportId";
-            this.reportIdDataGridViewTextBoxColumn.HeaderText = "ReportId";
-            this.reportIdDataGridViewTextBoxColumn.Name = "reportIdDataGridViewTextBoxColumn";
-            this.reportIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.reportIdDataGridViewTextBoxColumn.Width = 70;
-            // 
-            // driverDataGridViewTextBoxColumn
-            // 
-            this.driverDataGridViewTextBoxColumn.DataPropertyName = "Driver";
-            this.driverDataGridViewTextBoxColumn.HeaderText = "Driver";
-            this.driverDataGridViewTextBoxColumn.Name = "driverDataGridViewTextBoxColumn";
-            this.driverDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // completedOrderDataGridViewTextBoxColumn
-            // 
-            this.completedOrderDataGridViewTextBoxColumn.DataPropertyName = "CompletedOrder";
-            this.completedOrderDataGridViewTextBoxColumn.HeaderText = "CompletedOrder";
-            this.completedOrderDataGridViewTextBoxColumn.Name = "completedOrderDataGridViewTextBoxColumn";
-            this.completedOrderDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 50;
-            // 
-            // commentDataGridViewTextBoxColumn
-            // 
-            this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
-            this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
-            this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
-            this.commentDataGridViewTextBoxColumn.Width = 70;
             // 
             // tripReportBindingSource
             // 
@@ -179,6 +145,48 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Driver report";
             // 
+            // tripReportBindingSource1
+            // 
+            this.tripReportBindingSource1.DataMember = "TripReport";
+            this.tripReportBindingSource1.DataSource = this.taxiDataSet;
+            // 
+            // reportIdDataGridViewTextBoxColumn
+            // 
+            this.reportIdDataGridViewTextBoxColumn.DataPropertyName = "ReportId";
+            this.reportIdDataGridViewTextBoxColumn.HeaderText = "ReportId";
+            this.reportIdDataGridViewTextBoxColumn.Name = "reportIdDataGridViewTextBoxColumn";
+            this.reportIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.reportIdDataGridViewTextBoxColumn.Width = 70;
+            // 
+            // driverDataGridViewTextBoxColumn
+            // 
+            this.driverDataGridViewTextBoxColumn.DataPropertyName = "Driver";
+            this.driverDataGridViewTextBoxColumn.HeaderText = "Driver";
+            this.driverDataGridViewTextBoxColumn.Name = "driverDataGridViewTextBoxColumn";
+            this.driverDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // completedOrderDataGridViewTextBoxColumn
+            // 
+            this.completedOrderDataGridViewTextBoxColumn.DataPropertyName = "CompletedOrder";
+            this.completedOrderDataGridViewTextBoxColumn.HeaderText = "CompletedOrder";
+            this.completedOrderDataGridViewTextBoxColumn.Name = "completedOrderDataGridViewTextBoxColumn";
+            this.completedOrderDataGridViewTextBoxColumn.ReadOnly = true;
+            this.completedOrderDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // commentDataGridViewTextBoxColumn
+            // 
+            this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
+            this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
+            this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            this.commentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // ReportsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,6 +202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsReviewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tripReportBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,14 +216,15 @@
         private TaxiDataSetTableAdapters.TripReportTableAdapter tripReportTableAdapter;
         private System.Windows.Forms.BindingSource ordersBindingSource;
         private TaxiDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
+        private System.Windows.Forms.BindingSource clientsReviewBindingSource;
+        private TaxiDataSetTableAdapters.ClientsReviewTableAdapter clientsReviewTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn reportIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn driverDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn completedOrderDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource clientsReviewBindingSource;
-        private TaxiDataSetTableAdapters.ClientsReviewTableAdapter clientsReviewTableAdapter;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource tripReportBindingSource1;
     }
 }

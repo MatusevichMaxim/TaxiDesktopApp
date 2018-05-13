@@ -33,20 +33,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.taxiDataSet = new TaxiApp.TaxiDataSet();
-            this.taxiDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reviewsDG = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.clientsReviewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.taxiDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.taxiDataSet = new TaxiApp.TaxiDataSet();
             this.clientsReviewTableAdapter = new TaxiApp.TaxiDataSetTableAdapters.ClientsReviewTableAdapter();
             this.reviewIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.completedOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ratingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsDG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsReviewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -70,15 +70,15 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // bunifuCustomDataGrid1
+            // reviewsDG
             // 
-            this.bunifuCustomDataGrid1.AllowUserToAddRows = false;
+            this.reviewsDG.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.AutoGenerateColumns = false;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.reviewsDG.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.reviewsDG.AutoGenerateColumns = false;
+            this.reviewsDG.BackgroundColor = System.Drawing.Color.White;
+            this.reviewsDG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reviewsDG.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -86,40 +86,40 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.reviewsDG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.reviewsDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reviewsDG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reviewIdDataGridViewTextBoxColumn,
             this.completedOrderDataGridViewTextBoxColumn,
             this.ratingDataGridViewTextBoxColumn,
             this.commentDataGridViewTextBoxColumn});
-            this.bunifuCustomDataGrid1.DataSource = this.clientsReviewBindingSource;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Snow;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(22, 69);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.RowTemplate.Height = 40;
-            this.bunifuCustomDataGrid1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(438, 293);
-            this.bunifuCustomDataGrid1.TabIndex = 6;
+            this.reviewsDG.DataSource = this.clientsReviewBindingSource;
+            this.reviewsDG.DoubleBuffered = true;
+            this.reviewsDG.EnableHeadersVisualStyles = false;
+            this.reviewsDG.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(27)))), ((int)(((byte)(54)))));
+            this.reviewsDG.HeaderForeColor = System.Drawing.Color.Snow;
+            this.reviewsDG.Location = new System.Drawing.Point(22, 69);
+            this.reviewsDG.Name = "reviewsDG";
+            this.reviewsDG.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.reviewsDG.RowTemplate.Height = 40;
+            this.reviewsDG.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.reviewsDG.Size = new System.Drawing.Size(469, 293);
+            this.reviewsDG.TabIndex = 6;
             // 
-            // taxiDataSet
+            // clientsReviewBindingSource
             // 
-            this.taxiDataSet.DataSetName = "TaxiDataSet";
-            this.taxiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.clientsReviewBindingSource.DataMember = "ClientsReview";
+            this.clientsReviewBindingSource.DataSource = this.taxiDataSetBindingSource;
             // 
             // taxiDataSetBindingSource
             // 
             this.taxiDataSetBindingSource.DataSource = this.taxiDataSet;
             this.taxiDataSetBindingSource.Position = 0;
             // 
-            // clientsReviewBindingSource
+            // taxiDataSet
             // 
-            this.clientsReviewBindingSource.DataMember = "ClientsReview";
-            this.clientsReviewBindingSource.DataSource = this.taxiDataSetBindingSource;
+            this.taxiDataSet.DataSetName = "TaxiDataSet";
+            this.taxiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clientsReviewTableAdapter
             // 
@@ -130,24 +130,29 @@
             this.reviewIdDataGridViewTextBoxColumn.DataPropertyName = "ReviewId";
             this.reviewIdDataGridViewTextBoxColumn.HeaderText = "ReviewId";
             this.reviewIdDataGridViewTextBoxColumn.Name = "reviewIdDataGridViewTextBoxColumn";
+            this.reviewIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // completedOrderDataGridViewTextBoxColumn
             // 
             this.completedOrderDataGridViewTextBoxColumn.DataPropertyName = "CompletedOrder";
             this.completedOrderDataGridViewTextBoxColumn.HeaderText = "CompletedOrder";
             this.completedOrderDataGridViewTextBoxColumn.Name = "completedOrderDataGridViewTextBoxColumn";
+            this.completedOrderDataGridViewTextBoxColumn.ReadOnly = true;
+            this.completedOrderDataGridViewTextBoxColumn.Width = 130;
             // 
             // ratingDataGridViewTextBoxColumn
             // 
             this.ratingDataGridViewTextBoxColumn.DataPropertyName = "Rating";
             this.ratingDataGridViewTextBoxColumn.HeaderText = "Rating";
             this.ratingDataGridViewTextBoxColumn.Name = "ratingDataGridViewTextBoxColumn";
+            this.ratingDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // commentDataGridViewTextBoxColumn
             // 
             this.commentDataGridViewTextBoxColumn.DataPropertyName = "Comment";
             this.commentDataGridViewTextBoxColumn.HeaderText = "Comment";
             this.commentDataGridViewTextBoxColumn.Name = "commentDataGridViewTextBoxColumn";
+            this.commentDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ReviewsControl
             // 
@@ -155,14 +160,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.bunifuCustomDataGrid1);
+            this.Controls.Add(this.reviewsDG);
             this.Name = "ReviewsControl";
             this.Size = new System.Drawing.Size(702, 384);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsDG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsReviewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.taxiDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,14 +177,14 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn completedOrderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ratingDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid reviewsDG;
         private System.Windows.Forms.BindingSource clientsReviewBindingSource;
         private System.Windows.Forms.BindingSource taxiDataSetBindingSource;
         private TaxiDataSet taxiDataSet;
         private TaxiDataSetTableAdapters.ClientsReviewTableAdapter clientsReviewTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn completedOrderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ratingDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
     }
 }

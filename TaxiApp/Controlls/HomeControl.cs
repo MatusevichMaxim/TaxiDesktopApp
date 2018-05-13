@@ -15,6 +15,7 @@ namespace TaxiApp.Forms
 {
     public partial class HomeControl : UserControl
     {
+        private int currentOrder;
         private bool initialized;
 
         public HomeControl()
@@ -46,7 +47,8 @@ namespace TaxiApp.Forms
 
                     while (dr.Read())
                     {
-                        orderIdLabel.Text = $"Order: #{dr["OrderId"].ToString()}";
+                        currentOrder = Convert.ToInt32(dr["OrderId"]);
+                        orderIdLabel.Text = $"Order: #{currentOrder.ToString()}";
                         orderClientLabel.Text = dr["ClientName"].ToString();
                         orderPhoneLabel.Text = dr["Phone"].ToString();
                         orderLandingLabel.Text = $"{dr["LandingStreet"].ToString()}, {dr["LandingAddress"].ToString()}";
@@ -134,7 +136,43 @@ namespace TaxiApp.Forms
 
         private void startTripButton_Click(object sender, EventArgs e)
         {
+            using (var connection = new SqlConnection(Constants.Instance.DBConnectionString))
+            {
+                try
+                {
+                    string query = "Insert Into TripReport (Driver, CompletedOrder, Comment, DriverName) Values (@driver, @completedOrder, @comment, @driverName)";
+                    connection.Open();
+                    var cmd = new SqlCommand(query, connection);
 
+                    cmd.Parameters.AddWithValue("driver", "");
+                    cmd.Parameters.AddWithValue("completedOrder", currentOrder);
+                    cmd.Parameters.AddWithValue("comment", GetRandomComment());
+                }
+                catch (SqlException ex)
+                { }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        private string GetRandomComment()
+        {
+            var comments = new string[]
+                {
+                    "Tremendously thought out! Contrast.",
+                    "Bold work you have here.",
+                    "",
+                    "Vastly sublime illustration mate",
+                    "I adore your style m8",
+                    "",
+                    "Nice use of red in this shot m8",
+                    "So sick and good!"
+                };
+
+            var rand = new Random();
+            return comments[rand.Next(0, comments.Length)];
         }
     }
 }

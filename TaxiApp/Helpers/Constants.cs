@@ -34,11 +34,16 @@ namespace TaxiApp.Helpers
         public readonly string DBConnectionString = "Server=.\\SQLEXPRESS;Database=TaxiDB;Trusted_Connection=true";
         public string Status;
 
+        public List<BrandModel> Brands;
+        public List<ColorsModel> Colors;
+
         public void InitializeConstants()
         {
             this.Status = string.Empty;
             LoadStatuses();
             LoadDiscounts();
+            LoadBrands();
+            LoadColors();
         }
 
         private void LoadStatuses()
@@ -109,6 +114,70 @@ namespace TaxiApp.Helpers
         public void SetStatus(int id)
         {
             Status = Statuses[id].Name;
+        }
+
+        private void LoadBrands()
+        {
+            Brands = new List<BrandModel>();
+
+            using (var connection = new SqlConnection(DBConnectionString))
+            {
+                try
+                {
+                    const string query = "Select * From Brands";
+                    connection.Open();
+                    var cmd = new SqlCommand(query, connection);
+
+                    var dr = cmd.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        Brands.Add(new BrandModel()
+                        {
+                            Id = Convert.ToInt32(dr["BrandId"]),
+                            Name = dr["Name"].ToString()
+                        });
+                    }
+                }
+                catch (SqlException ex)
+                { }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+        }
+
+        private void LoadColors()
+        {
+            Colors = new List<ColorsModel>();
+
+            using (var connection = new SqlConnection(DBConnectionString))
+            {
+                try
+                {
+                    const string query = "Select * From Colors";
+                    connection.Open();
+                    var cmd = new SqlCommand(query, connection);
+
+                    var dr = cmd.ExecuteReader();
+
+                    while (dr.Read())
+                    {
+                        Colors.Add(new ColorsModel()
+                        {
+                            ColorId = Convert.ToInt32(dr["ColorId"]),
+                            Name = dr["Name"].ToString()
+                        });
+                    }
+                }
+                catch (SqlException ex)
+                { }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
     }
 }

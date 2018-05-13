@@ -18,8 +18,8 @@ namespace TaxiApp
             InitializeComponent();
 
             tabPointer.Height = HomeTab.Height;
-            //tabPointer.Top = HomeTab.Top;
-            //homeControl.BringToFront();
+            tabPointer.Top = HomeTab.Top;
+            homeControl.BringToFront();
         }
 
         private void HomeTab_Click(object sender, EventArgs e)
@@ -39,19 +39,6 @@ namespace TaxiApp
         private void exitBtn_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void accountStatusBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.accountStatusBindingSource.EndEdit();
-
-        }
-
-        private void MainMenuForm_Load(object sender, EventArgs e)
-        {
-           
-
         }
 
         private void DriversTab_Click(object sender, EventArgs e)

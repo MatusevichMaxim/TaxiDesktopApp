@@ -14,9 +14,6 @@ namespace TaxiApp.Controlls
 {
     public partial class FeedbackControl : UserControl
     {
-        private int currentPage = 1;
-        private int pageSize = 40;
-
         public FeedbackControl()
         {
             InitializeComponent();

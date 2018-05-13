@@ -31,3 +31,4 @@ C:\Users\Maxim\Desktop\TaxiApp\TaxiApp\obj\Debug\TaxiApp.exe
 C:\Users\Maxim\Desktop\TaxiApp\TaxiApp\obj\Debug\TaxiApp.pdb
 C:\Users\Maxim\Desktop\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Controlls.DiscountControl.resources
 C:\Users\Maxim\Desktop\TaxiApp\TaxiApp\obj\Debug\TaxiApp.Controlls.FeedbackControl.resources
+C:\Users\Maxim\Desktop\TaxiApp\TaxiApp\obj\Debug\TaxiApp.csprojResolveAssemblyReference.cache

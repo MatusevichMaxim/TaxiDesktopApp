@@ -45,6 +45,7 @@ namespace TaxiApp
         {
             signupName.Text = string.Empty;
             signupSurname.Text = string.Empty;
+            signupUsername.Text = string.Empty;
             signupPassword1.Text = string.Empty;
             termsCheckbox.Checked = false;
         }
@@ -67,6 +68,12 @@ namespace TaxiApp
             if (string.IsNullOrWhiteSpace(signupPassword1.Text))
             {
                 MessageBox.Show("A password is required", "Oops, that's unavailable!");
+                return;
+            }
+
+            if (!termsCheckbox.Checked)
+            {
+                MessageBox.Show("Make sure you accept the terms of service and privacy policy", "Oops, that's unavailable!");
                 return;
             }
 

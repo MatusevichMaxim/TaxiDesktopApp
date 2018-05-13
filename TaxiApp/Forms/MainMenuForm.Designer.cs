@@ -299,7 +299,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenuForm";
             this.Text = "MainMenuForm";
-            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.menuPanel.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();

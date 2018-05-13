@@ -99,6 +99,8 @@
     <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Models\AccountModel.cs" />
     <Compile Include="Models\AccountStatus.cs" />
+    <Compile Include="Models\BrandModel.cs" />
+    <Compile Include="Models\ColorsModel.cs" />
     <Compile Include="Models\DiscountModel.cs" />
     <Compile Include="Models\OrderModel.cs" />
     <Compile Include="Program.cs" />
@@ -523,6 +525,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-print-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-administrator-male-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-car-filled-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

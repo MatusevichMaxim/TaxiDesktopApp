@@ -15,7 +15,7 @@ namespace TaxiApp.Forms
 {
     public partial class HomeControl : UserControl
     {
-        private List<OrderModel> orders;
+        private bool initialized;
 
         public HomeControl()
         {

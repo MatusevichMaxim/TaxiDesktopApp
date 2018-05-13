@@ -443,6 +443,26 @@ namespace TaxiApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_administrator_male_52 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_administrator_male_52", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_car_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_car_filled_50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_map_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8_map_64", resourceCulture);
